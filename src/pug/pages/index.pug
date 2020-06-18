@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Test Pug
-  body
-    header.header
-      h1 Hello Pug
-      h2 New h2tag
+extends ../layouts/main
+block variables
+  - var pageTitle = 'Index page'  
+
+block content
+  a(href="colors.html") colors
+
+block scripts

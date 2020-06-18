@@ -1,13 +1,4 @@
-import _ from 'lodash';
-import './assets/scss/style.scss';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+import './assets/scss/nullstyle.scss';
+import './assets/scss/main.scss';
+import './assets/scss/colors.scss';
