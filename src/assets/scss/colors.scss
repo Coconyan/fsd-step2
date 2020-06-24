@@ -11,9 +11,10 @@ $dark-shade: rgba(31, 32, 65, 1);
   position: relative;
   width: 48px;
   height: 48px;
-  border: 2px solid rgba($color: $dark-shade, $alpha: 0.25);
+  border: 3px solid rgba($color: $dark-shade, $alpha: 0.25);
   border-radius: 50%;
-  background-image: url(../img/logo/logo-left-side.svg);
+  background: url(../img/logo/logo-left-side.svg) no-repeat 8px 15px,
+  url(../img/logo/logo-right-side.svg) no-repeat 22px 15px;
 
 }
 
