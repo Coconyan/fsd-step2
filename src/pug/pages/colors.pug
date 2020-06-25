@@ -1,7 +1,11 @@
 extends ../layouts/main
 block variables
-  - var pageTitle = 'Colors & Type' 
+  - var pageTitle = 'Colors & Type'
+
+include ../utils/colors-mixin
 
 block content
   div.logo-wrapper 
     span.logo
+  div.colors-wrapper
+    +palette({class: "dark-shade100", title: "Dark Shade 100%", hex: "#1F2041"})

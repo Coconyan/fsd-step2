@@ -1,1 +1,10 @@
-mixin palette
+mixin palette(options)
+  -
+    var colorClassName = "class"
+    var colorTitle = "title"
+    var colorHex = "hex"
+  .palette
+    .palette__box(class= options.class)
+    .palette__text
+      h2.palette__title= options.title
+      p.palette__subtitle= options.hex
