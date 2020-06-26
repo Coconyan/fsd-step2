@@ -7,5 +7,31 @@ include ../utils/colors-mixin
 block content
   div.logo-wrapper 
     span.logo
-  div.colors-wrapper
-    +palette({class: "dark-shade100", title: "Dark Shade 100%", hex: "#1F2041"})
+  .types-and-colors-wrapper
+    div.colors-wrapper
+      +palette({class: "dark-shade100", title: "Dark Shade 100%", hex: "#1F2041"})
+      +palette({class: "dark-shade75", title: "Dark Shade 75%", hex: "#1F2041"})
+      +palette({class: "dark-shade50", title: "Dark Shade 50%", hex: "#1F2041"})
+      +palette({class: "dark-shade25", title: "Dark Shade 25%", hex: "#1F2041"})
+      +palette({class: "dark-shade5", title: "Dark Shade 5%", hex: "#1F2041"})
+      +palette({class: "purple", title: "Purple", hex: "#BC9CFF"})
+      +palette({class: "green", title: "Green", hex: "#6FCF97"})
+    .types-wrapper
+      .types-row
+        .types-left
+          h1 H1
+        .types-right
+          h1 This one is the sub-section or widget title
+      .types-row
+        .types-left
+          h2 H2
+        .types-right
+          h2 Next one is the item title inside widgets
+      .types-row
+        .types-left
+          h3 H3
+        .types-right
+          h3 This is a label or CTA text
+      .types-row
+        .types-left Body
+        .types-right This is the body text which is used for most of the design, like paragraphs, lists, etc.

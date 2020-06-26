@@ -1,4 +1,6 @@
 $dark-shade: rgba(31, 32, 65, 1);
+$purple: #BC9CFF;
+$green: #6FCF97;
 
 .logo-wrapper {
   position: relative;
@@ -17,11 +19,19 @@ $dark-shade: rgba(31, 32, 65, 1);
   url(../img/logo/logo-right-side.svg) no-repeat 22px 15px;
 }
 
-.colors-wrapper {
-  margin: 145px 150px;
+.types-and-colors-wrapper {
+  margin: 97px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.colors-wrapper {  
   display: flex;
   justify-content: inherit;
   align-items: inherit;
+  flex-wrap: wrap;
+  width: 300px;
 }
 
 .palette {
@@ -41,17 +51,78 @@ $dark-shade: rgba(31, 32, 65, 1);
     line-height: 29px;
     padding: 6.5px 0px;
     align-self: center;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 19px;
   }
 
-  &__title {
-  }
+//  &__title {
+//  }
 
-  &__subtitle {
-
-  }
+//  &__subtitle {
+//  }
 }
 
+// colors
 
 .dark-shade100 {
   background-color: rgba($color: $dark-shade, $alpha: 1);  
+}
+
+.dark-shade75 {
+  background-color: rgba($color: $dark-shade, $alpha: 0.75);  
+}
+
+.dark-shade50 {
+  background-color: rgba($color: $dark-shade, $alpha: 0.50);  
+}
+
+.dark-shade25 {
+  background-color: rgba($color: $dark-shade, $alpha: 0.25);  
+}
+
+.dark-shade5 {
+  background-color: rgba($color: $dark-shade, $alpha: 0.05);  
+}
+
+.purple {
+  background-color: $purple;
+}
+
+.green {
+  background-color: $green;
+}
+
+.types-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.types-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.types-left {
+  text-align: right;
+  color: rgba($color: $dark-shade, $alpha: 0.25);
+  font-family: Montserrat, sans-serif;
+  margin-right: 30px;
+  min-width: 50px;
+}
+
+.types-right {
+  text-align: left;
+  width: 330px;
+  h3 {
+    text-transform: uppercase;
+  }  
+}
+
+.types-right:last-child {
+  color: rgba($color: $dark-shade, $alpha: 0.25);
 }
