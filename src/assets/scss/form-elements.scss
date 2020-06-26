@@ -1,0 +1,34 @@
+$dark-shade: rgba(31, 32, 65, 1);
+
+.form-elements-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 92px 141px;
+}
+.column-320 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.text-field {
+  width: 320px;
+  background: #FFFFFF;
+  border: 1px solid rgba($color: $dark-shade, $alpha: 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 13px 15px; 
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 5px 0px 20px 0px;
+  color: rgba($color: $dark-shade, $alpha: 0.25);  
+
+		&_focus {
+      border: 1px solid rgba($color: $dark-shade, $alpha: 0.5);
+      color: rgba($color: $dark-shade, $alpha: 0.75);
+		}
+}

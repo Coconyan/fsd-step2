@@ -1,0 +1,10 @@
+mixin textField(options)
+  -
+    var textFieldName = "name"
+    var textFieldPleceHolder = "placeholder"
+    var textFieldTitle = "title"
+    var textFieldClass = "class"
+  h3
+    label(for= options.name)= options.title
+  input(type="text", name= options.name, placeholder= options.placeholder class="text-field", class= options.class)
+  
