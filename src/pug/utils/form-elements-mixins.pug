@@ -4,7 +4,11 @@ mixin textField(options)
     var textFieldPleceHolder = "placeholder"
     var textFieldTitle = "title"
     var textFieldClass = "class"
-  h3
-    label(for= options.name)= options.title
-  input(type="text", name= options.name, placeholder= options.placeholder class="text-field", class= options.class)
+    var test = "test"
+  .input-wrapper
+    h3
+      label(for= options.name)= options.title
+      if test
+        span(class="ui-kit-right-text")= options.test
+    input(type="text", name= options.name, placeholder= options.placeholder class="text-field", class= options.class)
   
