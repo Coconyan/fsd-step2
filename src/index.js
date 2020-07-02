@@ -1,5 +1,6 @@
 
-import './assets/js/jquery-3.5.1.min.js';
+//import './assets/js/jquery-3.5.1.min.js';
+//import $ from 'jquery';
 import './assets/scss/nullstyle.scss';
 import './assets/scss/main.scss';
 import './assets/scss/colors.scss';
@@ -15,23 +16,34 @@ $(document).ready(() => {
   // min total items
   minItems: 0,
   // text to show on the dropdown override data-selection-text attribute
-  selectionText: 'item',
+  selectionText: 'Сколько гостей',
   // text to show for multiple items
-  textPlural: 'items',
-  // optionally can use setSelectionText function to override selectionText
-  setSelectionText: (itemCount, totalItems) => { /* return string */ },
-  // buttons to increment/decrement
-  controls: {
-    position: 'right',
-    displayCls: 'iqdropdown-item-display',
-    controlsCls: 'iqdropdown-item-controls',
-    counterCls: 'counter'
+  textPlural: 'гостя',
+  //  optionally can use setSelectionText function to override selectionText
+  setSelectionText: (itemCount, totalItems) => {
+    if (totalItems == 0) {
+      return 'Сколько гостей';
+    }
+    else if (totalItems == 1) {
+      return `${totalItems} гость`;
+    } 
+    else if (totalItems < 5) {
+      return `${totalItems} гостя`;
+    }
+    else return `${totalItems} гостей`;
   },
-  // fires when an item quantity changes
-  onChange: (id, count, totalItems) => {},
-  // return false to prevent an item decrement
-  beforeDecrement: (id, itemCount) => {},
-  // return false to prevent an item increment
-  beforeIncrement: (id, itemCount) => {}
+  // // buttons to increment/decrement
+  // controls: {
+  //   position: 'right',
+  //   displayCls: 'iqdropdown-item-display',
+  //   controlsCls: 'iqdropdown-item-controls',
+  //   counterCls: 'counter'
+  // },
+  // // fires when an item quantity changes
+  // onChange: (id, count, totalItems) => {},
+  // // return false to prevent an item decrement
+  // beforeDecrement: (id, itemCount) => {},
+  // // return false to prevent an item increment
+  // beforeIncrement: (id, itemCount) => {}
   });
 });
