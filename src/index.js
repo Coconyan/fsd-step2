@@ -7,7 +7,8 @@ import './assets/scss/colors.scss';
 import './assets/scss/fonts.scss';
 import './assets/scss/form-elements.scss';
 import './assets/scss/item-quantity-dropdown.scss';
-import './assets/js/item-quantity-dropdown';
+//import './assets/js/item-quantity-dropdown';
+import './assets/js/item-quantity-dropdown-test'
 
 $(document).ready(() => {
   $('.iqdropdown').iqDropdown({ 
@@ -20,18 +21,18 @@ $(document).ready(() => {
   // text to show for multiple items
   textPlural: 'гостя',
   //  optionally can use setSelectionText function to override selectionText
-  setSelectionText: (itemCount, totalItems) => {
-    if (totalItems == 0) {
-      return 'Сколько гостей';
-    }
-    else if (totalItems == 1) {
-      return `${totalItems} гость`;
-    } 
-    else if (totalItems < 5) {
-      return `${totalItems} гостя`;
-    }
-    else return `${totalItems} гостей`;
-  },
+  // setSelectionText: (itemCount, totalItems) => {
+  //   if (totalItems == 0) {
+  //     return 'Сколько гостей';
+  //   }
+  //   else if (totalItems == 1) {
+  //     return `${totalItems} гость`;
+  //   } 
+  //   else if (totalItems < 5) {
+  //     return `${totalItems} гостя`;
+  //   }
+  //   else return `${totalItems} гостей`;
+  // },
   // // buttons to increment/decrement
   // controls: {
   //   position: 'right',

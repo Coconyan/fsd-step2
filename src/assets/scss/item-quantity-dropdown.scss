@@ -1,4 +1,5 @@
 $dark-shade: rgba(31, 32, 65, 1);
+$purple: #BC9CFF;
 
 .iqdropdown {
   -webkit-tap-highlight-color: transparent;
@@ -135,7 +136,7 @@ $dark-shade: rgba(31, 32, 65, 1);
   align-items: center;
   display: flex;
   height: 30px;
-  padding: 0 15px;
+  padding: 0 7px 0 15px;
   margin: 7px 0;
 }
 
@@ -271,4 +272,27 @@ $dark-shade: rgba(31, 32, 65, 1);
 
 .iqdropdown.menu-open .iqdropdown-selection::after {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAe1BMVEVMaXH///+ZmZmqqqqVlZWdnZ2Xl5eVlZWVlZWUlJSQkJCUlJSTk5ORkZGRkZGRkZGSkpKRkZGSkpKSkpKRkZGQkJCRkZGRkZGRkZGQkJCSkpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJAwdLQhAAAAKHRSTlMAAQUGDA0bHSQmNTdHSEpYWV1gbnKIi5SZqqqytcfJzNfZ5uf19fn+jEECQQAAAIhJREFUeNqNj+cSwkAIhLn0Znoz7dLD+z9hII6OJTruH5b9mDuAv2VKaX5BSjojLqlyxi49Huq9D2TVlG/VdaNSWy9Iy1YKOxfA7cismfZAIhopmWJxNPFEzRiJG3NaHs71+6ye8zOtwz7kbxobnmQ3vEBArkAcfHiTPyAWVI0yOTlNTUoDfmoHOBIMkOONx34AAAAASUVORK5CYII=);
+}
+
+.iqdropdown-menu-last-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 7px 13px 15px;
+}
+
+.iqdropdown-menu-clear-btn {
+  color: rgba($color: $dark-shade, $alpha: 0.5);
+  visibility: hidden;
+}
+
+.iqdropdown-menu-clear-btn .visible{
+  visibility: visible;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.iqdropdown-menu-submit-btn {
+  color: $purple;
 }
