@@ -7,8 +7,13 @@ import './assets/scss/colors.scss';
 import './assets/scss/fonts.scss';
 import './assets/scss/form-elements.scss';
 import './assets/scss/item-quantity-dropdown.scss';
-//import './assets/js/item-quantity-dropdown';
-import './assets/js/item-quantity-dropdown-test'
+import './assets/js/item-quantity-dropdown';
+import './assets/js/datepicker';
+import './assets/scss/air-datepicker/air-datepicker.scss';
+// import './assets/scss/air-datepicker/cell.scss';
+// import './assets/scss/air-datepicker/datepicker.scss';
+// import './assets/scss/air-datepicker/navigation.scss';
+// import './assets/scss/air-datepicker/timepicker.scss';
 
 $(document).ready(() => {
   $('.iqdropdown').iqDropdown({ 

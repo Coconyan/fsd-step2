@@ -37,6 +37,28 @@ $dark-shade: rgba(31, 32, 65, 1);
 		}
 }
 
+.text-field-150 {
+  width: 150px;
+}
+
+.text-field-150-wrapper {
+  width: 150px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-down::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="rgba(31, 32, 65, 0.5)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  right: 0;
+}
+
 .text-field::placeholder {
   color: rgba($color: $dark-shade, $alpha: 0.25);
 }

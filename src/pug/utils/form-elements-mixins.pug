@@ -1,28 +1,28 @@
 mixin textField(options)
   -
-    var textFieldName = "name"
-    var textFieldPleceHolder = "placeholder"
-    var textFieldTitle = "title"
-    var textFieldClass = "class"
-    var test = "test"
+    var textFieldName = 'name'
+    var textFieldPleceHolder = 'placeholder'
+    var textFieldTitle = 'title'
+    var textFieldClass = 'class'
+    var test = 'test'
   .input-wrapper
     h3
       label(for= options.name)= options.title
       if test
-        span(class="ui-kit-right-text")= options.test
-    input(type="text", name= options.name, placeholder= options.placeholder class="text-field", class= options.class)
+        span(class='ui-kit-right-text')= options.test
+    input(type='text', name= options.name, placeholder= options.placeholder class='text-field', class= options.class)
 
 mixin dropDownGuests(options)
   -
-    var dropDownFieldTitle = "title"
-    var test = "test"
+    var dropDownFieldTitle = 'title'
+    var test = 'test'
   .input-wrapper
     h3
       label(for= options.name)= options.title
       if test
-        span(class="ui-kit-right-text")= options.test  
+        span(class='ui-kit-right-text')= options.test  
     .iqdropdown
-      p.iqdropdown-selection(data-seletion-text="Сколько гостей")
+      p.iqdropdown-selection(data-seletion-text='Сколько гостей')
       .iqdropdown-menu
         .iqdropdown-menu-option(data-id='item1')
           div
@@ -36,3 +36,16 @@ mixin dropDownGuests(options)
         .iqdropdown-menu-last-row
           p.iqdropdown-menu-clear-btn Очистить
           p.iqdropdown-menu-submit-btn Применить
+
+mixin dateDropdown150(options)
+  -
+    var textFieldName = 'name'
+    var textFieldPleceHolder = 'placeholder'
+    var textFieldTitle = 'title'
+  .input-wrapper
+    h3
+      label(for= options.name)= options.title
+      if test
+        span(class='ui-kit-right-text')= options.test
+    .text-field-150-wrapper(class='arrow-down')
+      input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-150', class= 'datepicker-here')

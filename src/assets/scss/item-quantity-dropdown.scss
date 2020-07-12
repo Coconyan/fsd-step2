@@ -249,20 +249,16 @@ $purple: #BC9CFF;
   // font-weight: 400;
   flex: 1;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .iqdropdown .iqdropdown-selection::after {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAeFBMVEVMaXGVlZWRkZGRkZH///+UlJSRkZGQkJCRkZGZmZmRkZGRkZGSkpKRkZGVlZWQkJCdnZ2QkJCVlZWUlJSQkJCXl5eRkZGSkpKRkZGSkpKRkZGRkZGRkZGRkZGQkJCQkJCRkZGSkpKQkJCRkZGTk5OSkpKRkZGQkJAWlBl2AAAAJ3RSTlMAHcnXATdy+f4FzLJg5ySKDYgMJuYbSm61XtmUmcc1qkiq9fVHWVidqGmEAAAAhUlEQVR42o2O5w7CYAhF6e7XvfdwtN73f0OhatLUxnj+wMklAP2mHGpFX6h6KLn0QFcds6oDeq6rC6DJ91HeAHAf0k4jACdOPlESOwDG6WVmW7CFgblJELIULcubLJVh3SKydFmTZrQn8uXMdZYH/IiOXAxsGAudoOwbcLcVnaN5nkb/8gRapQtVGGewNQAAAABJRU5ErkJggg==);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="rgba(31, 32, 65, 0.5)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
   content: '';
-  display: inline-block;
-  height: 5px;
-  width: 12px;
-  position: absolute;
-  right: 0;
-  top: 40%;
+  height: 24px;
+  width: 24px;
 }
 
 .iqdropdown.menu-open {
@@ -271,7 +267,7 @@ $purple: #BC9CFF;
 }
 
 .iqdropdown.menu-open .iqdropdown-selection::after {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAe1BMVEVMaXH///+ZmZmqqqqVlZWdnZ2Xl5eVlZWVlZWUlJSQkJCUlJSTk5ORkZGRkZGRkZGSkpKRkZGSkpKSkpKRkZGQkJCRkZGRkZGRkZGQkJCSkpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJAwdLQhAAAAKHRSTlMAAQUGDA0bHSQmNTdHSEpYWV1gbnKIi5SZqqqytcfJzNfZ5uf19fn+jEECQQAAAIhJREFUeNqNj+cSwkAIhLn0Znoz7dLD+z9hII6OJTruH5b9mDuAv2VKaX5BSjojLqlyxi49Huq9D2TVlG/VdaNSWy9Iy1YKOxfA7cismfZAIhopmWJxNPFEzRiJG3NaHs71+6ye8zOtwz7kbxobnmQ3vEBArkAcfHiTPyAWVI0yOTlNTUoDfmoHOBIMkOONx34AAAAASUVORK5CYII=);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="rgba(31, 32, 65, 0.75)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
 }
 
 .iqdropdown-menu-last-row {
