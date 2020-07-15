@@ -5,47 +5,64 @@ mixin textField(options)
     var textFieldTitle = 'title'
     var textFieldClass = 'class'
     var test = 'test'
-  .input-wrapper
-    h3
-      label(for= options.name)= options.title
-      if test
-        span(class='ui-kit-right-text')= options.test
-    input(type='text', name= options.name, placeholder= options.placeholder class='text-field', class= options.class)
+  .input-row
+    .input-320-wrapper
+      h3
+        label(for= options.name)= options.title
+        if test
+          span(class='ui-kit-right-text')= options.test
+      input(type='text', name= options.name, placeholder= options.placeholder class='text-field', class= options.class)
 
 mixin dropDownGuests(options)
   -
     var dropDownFieldTitle = 'title'
     var test = 'test'
-  .input-wrapper
-    h3
-      label(for= options.name)= options.title
-      if test
-        span(class='ui-kit-right-text')= options.test  
-    .iqdropdown
-      p.iqdropdown-selection(data-seletion-text='Сколько гостей')
-      .iqdropdown-menu
-        .iqdropdown-menu-option(data-id='item1')
-          div
-            p.iqdropdown-item Взрослые
-        .iqdropdown-menu-option(data-id='item2')
-          div
-            p.iqdropdown-item Дети
-        .iqdropdown-menu-option(data-id='item3')
-          div
-            p.iqdropdown-item Младенцы
-        .iqdropdown-menu-last-row
-          p.iqdropdown-menu-clear-btn Очистить
-          p.iqdropdown-menu-submit-btn Применить
+  .input-row
+    .input-320-wrapper
+      h3
+        label(for= options.name)= options.title
+        if test
+          span(class='ui-kit-right-text')= options.test  
+      .iqdropdown
+        p.iqdropdown-selection(data-seletion-text='Сколько гостей')
+        .iqdropdown-menu
+          .iqdropdown-menu-option(data-id='item1')
+            div
+              p.iqdropdown-item Взрослые
+          .iqdropdown-menu-option(data-id='item2')
+            div
+              p.iqdropdown-item Дети
+          .iqdropdown-menu-option(data-id='item3')
+            div
+              p.iqdropdown-item Младенцы
+          .iqdropdown-menu-last-row
+            p.iqdropdown-menu-clear-btn Очистить
+            p.iqdropdown-menu-submit-btn Применить
 
 mixin dateDropdown150(options)
   -
     var textFieldName = 'name'
     var textFieldPleceHolder = 'placeholder'
-    var textFieldTitle = 'title'
-  .input-wrapper
+    var textFieldTitle = 'title'  
+  .input-150-wrapper
     h3
       label(for= options.name)= options.title
       if test
         span(class='ui-kit-right-text')= options.test
     .text-field-150-wrapper(class='arrow-down')
       input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-150', class= 'datepicker-here')
+
+
+mixin filterDateDropdown(options)
+  -
+    var textFieldName = 'name'
+    var textFieldPleceHolder = 'placeholder'
+    var textFieldTitle = 'title'
+  .input-row
+    .input-266-wrapper
+      h3
+        label(for= options.name)= options.title
+        if test
+          span(class='ui-kit-right-text')= options.test
+      .text-field-266-wrapper(class='arrow-down')
+        input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-266', class= 'datepicker-here' data-range='true' data-multiple-dates-separator=' - ' data-date-format="dd M")

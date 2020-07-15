@@ -13,9 +13,31 @@ $dark-shade: rgba(31, 32, 65, 1);
   align-items: flex-start;
 }
 
-.input-wrapper {
+.input-row {
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-320-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-150-wrapper {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.input-row h3 {
+  margin-bottom: 6px;
+}
+
+.input-266-wrapper {
+  width: 266px;
+  margin-bottom: 20px;
 }
 
 .text-field {
@@ -24,13 +46,13 @@ $dark-shade: rgba(31, 32, 65, 1);
   border: 1px solid rgba($color: $dark-shade, $alpha: 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 13px 15px; 
+  padding: 9px 15px; 
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  margin: 5px 0px 20px 0px;  
+  margin: 0px 0px 20px 0px;  
 
 		&_focus {
       border: 1px solid rgba($color: $dark-shade, $alpha: 0.5);      
@@ -39,11 +61,25 @@ $dark-shade: rgba(31, 32, 65, 1);
 
 .text-field-150 {
   width: 150px;
+  margin: 0;
+}
+
+.text-field-266 {
+  width: 266px;
+  margin: 0;
 }
 
 .text-field-150-wrapper {
   width: 150px;
-  margin-right: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-field-266-wrapper {
+  width: 266px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,10 +88,14 @@ $dark-shade: rgba(31, 32, 65, 1);
 .arrow-down::after {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="rgba(31, 32, 65, 0.5)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
   content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: content-box;
   display: inline-block;
   position: absolute;
   height: 24px;
   width: 24px;
+  padding: 20px 20px 0 0;
   right: 0;
 }
 
