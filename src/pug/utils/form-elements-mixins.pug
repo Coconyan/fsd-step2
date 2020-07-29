@@ -65,4 +65,19 @@ mixin filterDateDropdown(options)
         if test
           span(class='ui-kit-right-text')= options.test
       .text-field-266-wrapper(class='arrow-down')
-        input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-266', class= 'datepicker-here' data-range='true' data-multiple-dates-separator=' - ' data-date-format="dd M")
+        input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-266', class= 'datepicker-here' data-range='true' data-multiple-dates-separator=' - ' data-date-format='dd M')
+
+
+mixin subscriptionTextField(options)
+  -
+    var textFieldName = 'name'
+    var textFieldPleceHolder = 'placeholder'
+    var textFieldTitle = 'title'
+  .input-row
+    .input-266-wrapper
+      h3
+        label(for= options.name)= options.title
+        if test
+          span(class='ui-kit-right-text')= options.test
+      .text-field-266-wrapper(class='arrow-forward')
+        input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-266')

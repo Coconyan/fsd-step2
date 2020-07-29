@@ -99,6 +99,20 @@ $dark-shade: rgba(31, 32, 65, 1);
   right: 0;
 }
 
+.arrow-forward::after {
+  background-image: url('../img/arrows/arrow_forward-gradient-24dp.svg');
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: content-box;
+  display: inline-block;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  padding: 20px 20px 0 0;
+  right: 0;
+}
+
 .text-field::placeholder {
   color: rgba($color: $dark-shade, $alpha: 0.25);
 }
