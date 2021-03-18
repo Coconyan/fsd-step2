@@ -1,4 +1,5 @@
 $dark-shade: rgba(31, 32, 65, 1);
+$purple: #BC9CFF;
 
 .form-elements-wrapper {
   display: flex;
@@ -83,6 +84,43 @@ $dark-shade: rgba(31, 32, 65, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.checkbox-default {
+  position: absolute;
+  opacity: 0;
+  width: 21px;
+  height: 21px;
+}
+
+.checkbox-default+label {
+  display: inline-flex;
+  align-items: flex-start;
+  user-select: none;
+  width: 240px; // questionable
+}
+
+.checkbox-default+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba($color: $dark-shade, $alpha: 0.25);
+  border-radius: 4px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+
+.checkbox-default:checked+label::before {
+  border-color: $purple;
+  background-color: transparent;
+  background-image: url("../img/checks/check-gradient.svg");
 }
 
 .arrow-down::after {

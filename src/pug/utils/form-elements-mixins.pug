@@ -81,3 +81,15 @@ mixin subscriptionTextField(options)
           span(class='ui-kit-right-text')= options.test
       .text-field-266-wrapper(class='arrow-forward')
         input(type='text', name= options.name, placeholder= options.placeholder class='text-field text-field-266')
+
+
+mixin checkboxButton(options)
+  -
+    var checkboxName = 'name'
+    var checkboxClass = 'class'
+    var checkboxTitle = 'title'
+    var test = 'test'
+  .input-row
+    .input-320-wrapper      
+      input(type='checkbox', name= options.name, class='checkbox-default')
+      label(for= options.name)= options.title
