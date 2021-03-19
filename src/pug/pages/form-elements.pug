@@ -20,11 +20,14 @@ block content
       +subscriptionTextField({title: "subscription text field", name: "subscription-text-field", placeholder: "Email"})
       
     .column-320
-      h3 Checkbox buttons
-      +checkboxButton({title: "Можно курить", name: "checkbox-1"})
-      +checkboxButton({title: "Можно с питомцами", name: "checkbox-2"})
-      +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox-3"})
-      +textField({title: "text-field", name: "text-field-focus", placeholder: "This is pretty awesome", class:"text-field_focus"})
+      h3.head-margin Checkbox buttons
+      +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
+      +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
+      +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
+      h3.head-margin-top.head-margin Radio buttons
+      .input-row
+        +radioButton({title: "Мужчина", name: "radio", id: "radio-1"})
+        +radioButton({title: "Женщина", name: "radio", id: "radio-2"})
     .column-320
       +textField({title: "text-field", name: "text-field-default", placeholder: "Email"})
       +textField({title: "text-field", name: "text-field-focus", placeholder: "This is pretty awesome", class:"text-field_focus"})

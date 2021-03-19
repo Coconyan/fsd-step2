@@ -1,6 +1,14 @@
 $dark-shade: rgba(31, 32, 65, 1);
 $purple: #BC9CFF;
 
+.head-margin {
+  margin-bottom: 15px;
+}
+
+.head-margin-top {
+  margin-top: 40px;
+}
+
 .form-elements-wrapper {
   display: flex;
   justify-content: space-between;
@@ -98,6 +106,7 @@ $purple: #BC9CFF;
   align-items: flex-start;
   user-select: none;
   width: 240px; // questionable
+  color: rgba($color: $dark-shade, $alpha: 0.5);
 }
 
 .checkbox-default+label::before {
@@ -116,12 +125,56 @@ $purple: #BC9CFF;
   background-size: 50% 50%;
 }
 
-
 .checkbox-default:checked+label::before {
   border-color: $purple;
   background-color: transparent;
   background-image: url("../img/checks/check-gradient.svg");
 }
+
+//**********
+
+.radio-default {
+  position: absolute;
+  opacity: 0;
+  width: 21px;
+  height: 21px;
+}
+
+.radio-default+label {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+  color: rgba($color: $dark-shade, $alpha: 0.5);  
+  margin-right: 20px;
+}
+
+.radio-default+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba($color: $dark-shade, $alpha: 0.25);
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.radio-default:checked+label::before {
+  border-color: $purple;
+  background-color: transparent;
+  background-image: url("../img/radio/radio-circle.svg");  
+}
+
+.radio-default:checked+label {
+  color: rgba($color: $dark-shade, $alpha: 0.75);
+}
+
 
 .arrow-down::after {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="rgba(31, 32, 65, 0.5)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');

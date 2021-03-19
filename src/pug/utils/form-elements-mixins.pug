@@ -88,8 +88,19 @@ mixin checkboxButton(options)
     var checkboxName = 'name'
     var checkboxClass = 'class'
     var checkboxTitle = 'title'
-    var test = 'test'
+    var checkboxId = 'id'
   .input-row
     .input-320-wrapper      
-      input(type='checkbox', name= options.name, class='checkbox-default')
-      label(for= options.name)= options.title
+      input(type='checkbox', name= options.name, id= options.id class='checkbox-default')
+      label(for= options.id)= options.title
+
+
+mixin radioButton(options)
+  -
+    var radioName = 'name'
+    var radioClass = 'class'
+    var radioTitle = 'title'
+    var radioId = 'id' 
+  div.radio-wrapper
+    input(type='radio', name= options.name, id= options.id class='radio-default')
+    label(for= options.id)= options.title
