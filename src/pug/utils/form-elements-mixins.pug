@@ -91,7 +91,7 @@ mixin checkboxButton(options)
     var checkboxId = 'id'
   .input-row
     .input-320-wrapper      
-      input(type='checkbox', name= options.name, id= options.id class='checkbox-default')
+      input(type='checkbox', name= options.name, id= options.id, class='checkbox-default')
       label(for= options.id)= options.title
 
 
@@ -102,5 +102,19 @@ mixin radioButton(options)
     var radioTitle = 'title'
     var radioId = 'id' 
   div.radio-wrapper
-    input(type='radio', name= options.name, id= options.id class='radio-default')
+    input(type='radio', name= options.name, id= options.id, class='radio-default')
     label(for= options.id)= options.title
+
+
+mixin toggleSwitch(options)
+  -
+    var toggleName = 'name'
+    var toggleClass = 'class'
+    var toggleTitle = 'title'
+    var toggleId = 'id'
+    var toggleChecked = 'checked' 
+  .input-row.toggle-wrapper
+    label(for= options.id, class='switch')      
+      input(type='checkbox', name= options.name, id= options.id, class=options.class)
+      span(class='slider round')
+    span(class='toggle-text')= options.title

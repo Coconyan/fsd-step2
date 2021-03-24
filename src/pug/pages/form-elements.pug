@@ -28,6 +28,9 @@ block content
       .input-row
         +radioButton({title: "Мужчина", name: "radio", id: "radio-1"})
         +radioButton({title: "Женщина", name: "radio", id: "radio-2"})
+      h3.head-margin-top.head-margin Toggle
+      +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-1"})
+      +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2", checked: "checked"})
     .column-320
       +textField({title: "text-field", name: "text-field-default", placeholder: "Email"})
       +textField({title: "text-field", name: "text-field-focus", placeholder: "This is pretty awesome", class:"text-field_focus"})
