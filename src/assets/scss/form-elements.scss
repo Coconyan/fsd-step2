@@ -349,3 +349,22 @@ input:checked + .slider-like {
 input:checked + .slider-like:before {
   background: url(../img/hearts/active-heart.svg) no-repeat center;
 }
+
+// rate button
+
+.rate-button {
+  background: url(../img/stars/inactive-star.svg) no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+
+.rate-button__checked {
+  background: url(../img/stars/active-star.svg) no-repeat center;
+}
+
+.rate-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
