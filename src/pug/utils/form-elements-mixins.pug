@@ -118,3 +118,17 @@ mixin toggleSwitch(options)
       input(type='checkbox', name= options.name, id= options.id, class=options.class)
       span(class='slider round')
     span(class='toggle-text')= options.title
+
+
+mixin likeButton(options)
+  -
+    var likeName = 'name'
+    var likeClass = 'class'
+    var likeTitle = 'title'
+    var likeId = 'id'
+    var likeChecked = 'checked'
+    var likeCount = 'count'   
+  label(for= options.id, class='switch-like')      
+    input(type='checkbox', name= options.name, id= options.id, class=options.class)
+    span(class='slider-like round')
+      span(class='like-count')= options.count

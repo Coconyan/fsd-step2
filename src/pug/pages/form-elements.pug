@@ -31,6 +31,10 @@ block content
       h3.head-margin-top.head-margin Toggle
       +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-1"})
       +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2", checked: "checked"})
+      h3.head-margin-top.head-margin Like button
+      .input-row.toggle-wrapper
+        +likeButton({name: "like", id: "like-1", count: "2"})
+        +likeButton({name: "like", id: "like-2", count: "12"})
     .column-320
       +textField({title: "text-field", name: "text-field-default", placeholder: "Email"})
       +textField({title: "text-field", name: "text-field-focus", placeholder: "This is pretty awesome", class:"text-field_focus"})
