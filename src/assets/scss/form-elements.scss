@@ -368,3 +368,19 @@ input:checked + .slider-like:before {
   justify-content: center;
   margin-right: 20px;
 }
+
+// noUiSlider
+
+.noUi-target {
+  width: 266px;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-target {
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}

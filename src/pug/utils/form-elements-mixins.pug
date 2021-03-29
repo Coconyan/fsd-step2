@@ -134,13 +134,3 @@ mixin likeButton(options)
       span(class='like-count')= options.count
 
 
-mixin rateButton(options)
-  -
-    var rateName = 'name'
-    var rateClass = 'class'
-    var rateId = 'id'
-    var rateChecked = 'checked'
-  label(for= options.id, class='switch-like')      
-    input(type='checkbox', name= options.name, id= options.id, class=options.class)
-    span(class='slider-like round')
-      span(class='like-count')= options.count

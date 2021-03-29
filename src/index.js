@@ -10,6 +10,8 @@ import './assets/scss/item-quantity-dropdown.scss';
 import './assets/js/item-quantity-dropdown';
 import './assets/js/datepicker';
 import './assets/scss/air-datepicker/air-datepicker.scss';
+import noUiSlider from 'nouislider';
+import 'nouislider/distribute/nouislider.css';
 // import './assets/scss/air-datepicker/cell.scss';
 // import './assets/scss/air-datepicker/datepicker.scss';
 // import './assets/scss/air-datepicker/navigation.scss';
@@ -52,4 +54,16 @@ $(document).ready(() => {
   // // return false to prevent an item increment
   // beforeIncrement: (id, itemCount) => {}
   });
+});
+
+
+var handlesSlider = document.getElementById('slider-handles');
+
+noUiSlider.create(handlesSlider, {
+    start: [5000, 10000],
+    connect: [false, true, false],
+    range: {
+        'min': [0],
+        'max': [15000]
+    }
 });
