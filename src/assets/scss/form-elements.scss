@@ -405,6 +405,20 @@ input:checked + .slider-like:before {
   margin: 0 20px 30px 0;
 }
 
+.button-gradient-arrow {
+  width: 320px;
+}
+
+.button-gradient-arrow::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  background: url(../img/arrows/arrow_forward-white.svg) no-repeat center;
+}
+
 .button-gradient__disable {
   opacity: 0.5;
 } 
@@ -446,6 +460,49 @@ input:checked + .slider-like:before {
   text-transform: uppercase;
   margin: 0 20px 30px 0;
 }
+
 .button-text__disable {
   color: rgba(31, 32, 65, 0.5);
+}
+
+// Pagination
+
+.pagination-wrapper {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pagination-wrapper-text {
+  justify-content: center;
+}
+
+.pagination-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 40px;
+  height: 40px;
+  color: rgba(31, 32, 65, 0.5);
+  border-radius: 22px;
+}
+
+.pagination-page:first-child {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: white;
+}
+
+.pagination-page:last-child {  
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  position: relative;
+}
+
+.pagination-page:last-child::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../img/arrows/arrow_forward-white.svg) center no-repeat;
 }
