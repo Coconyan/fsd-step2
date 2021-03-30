@@ -13,7 +13,7 @@ block content
       +textField({title: "text field", name: "text-field-focus", placeholder: "This is pretty awesome", class:"text-field_focus", test: "Hover / Focus"})
       +dropDownGuests({title: "dropdown", test: "DEFAULT"})
       +textField({title: "masked text field", name: "text-field-default", placeholder: "ДД.ММ.ГГГГ", test: "DEFAULT"})
-      .input-row
+      .input-row.input-row-between
         +dateDropdown150({title: "date dropdown", name: "date-dropdown-150", placeholder: "ДД.ММ.ГГГГ"})
         +dateDropdown150({title: "date dropdown", name: "date-dropdown-150", placeholder: "ДД.ММ.ГГГГ"})
       +filterDateDropdown({title: "filter date dropdown", name: "filter-date-dropdown", placeholder: "19 авг - 23 авг"})
@@ -53,6 +53,16 @@ block content
       h3.head-margin Range slider
       .input-row 
         .noUi-target.noUi-ltr.noUi-horizontal.noUi-txt-dir-ltr#slider-handles
+      h3.head-margin-top.head-margin Buttons 
+      .input-row
+        button.button-gradient Click me
+        button.button-gradient.button-gradient__disable Click me
+      .input-row
+        button.button-gradient.button-gradient-no-fill Click me
+        button.button-gradient.button-gradient-no-fill.button-gradient__disable Click me
+      .input-row
+        button.button-text Click me
+        button.button-text.button-text__disable Click me
       +textField({title: "text-field", name: "text-field-default", placeholder: "Email"})
       +textField({title: "text-field", name: "text-field-focus", placeholder: "This is pretty awesome", class:"text-field_focus"})
   

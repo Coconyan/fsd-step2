@@ -26,8 +26,12 @@ $purple: #BC9CFF;
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
+}
+
+.input-row-between {
+  justify-content: space-between;
 }
 
 .input-320-wrapper {
@@ -383,4 +387,65 @@ input:checked + .slider-like:before {
   background: transparent;
   border-radius: 3px;
   border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+// Buttons
+
+.button-gradient {
+  width: 99px;
+  height: 44px; 
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);  
+  color: white;
+  border: none;
+  border-radius: 22px;  
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 20px 30px 0;
+}
+
+.button-gradient__disable {
+  opacity: 0.5;
+} 
+
+.button-gradient-no-fill {
+  border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: white;
+  color: $purple;
+}
+
+// styles for gradient
+
+.button-gradient-no-fill {
+  position: relative;
+}
+
+.button-gradient-no-fill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 22px; 
+  padding: 2px; 
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; 
+  mask-composite: exclude; 
+}
+
+.button-text {
+  border: none;
+  background: none;
+  color: $purple;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 20px 30px 0;
+}
+.button-text__disable {
+  color: rgba(31, 32, 65, 0.5);
 }
