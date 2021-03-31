@@ -264,6 +264,7 @@ $purple: #BC9CFF;
 .iqdropdown.menu-open {
   border-radius: 4px 4px 0 0;
   border: 1px solid rgba($color: $dark-shade, $alpha: 0.5);
+  margin-bottom: 180px;
 }
 
 .iqdropdown.menu-open .iqdropdown-selection::after {
@@ -273,7 +274,7 @@ $purple: #BC9CFF;
 .iqdropdown-menu-last-row {
   display: flex;
   justify-content: space-between;
-  margin: 13px 7px 13px 15px;
+  margin: 20px 7px 13px 15px;
 }
 
 .iqdropdown-menu-clear-btn {

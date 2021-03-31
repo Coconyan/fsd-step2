@@ -13,9 +13,20 @@ $purple: #BC9CFF;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 92px 141px;
+  margin: 0px 141px 100px 141px;
+  flex-wrap: wrap;
 }
+
 .column-320 {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.column-260 {
+  width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

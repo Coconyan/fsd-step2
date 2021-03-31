@@ -20,35 +20,36 @@ block content
       +subscriptionTextField({title: "subscription text field", name: "subscription-text-field", placeholder: "Email"})
       
     .column-320
-      h3.head-margin Checkbox buttons
-      +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
-      +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
-      +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
-      h3.head-margin-top.head-margin Radio buttons
-      .input-row
-        +radioButton({title: "Мужчина", name: "radio", id: "radio-1"})
-        +radioButton({title: "Женщина", name: "radio", id: "radio-2"})
-      h3.head-margin-top.head-margin Toggle
-      +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-1"})
-      +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2", checked: "checked"})
-      h3.head-margin-top.head-margin Like button
-      .input-row.toggle-wrapper
-        +likeButton({name: "like", id: "like-1", count: "2"})
-        +likeButton({name: "like", id: "like-2", count: "12"})
-      h3.head-margin-top.head-margin Rate button
-      .input-row
-        .rate-wrapper
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked 
-          span.rate-button.
-        .rate-wrapper
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked 
-          span.rate-button.rate-button__checked
+      .column-260
+        h3.head-margin Checkbox buttons
+        +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
+        +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
+        +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
+        h3.head-margin-top.head-margin Radio buttons
+        .input-row
+          +radioButton({title: "Мужчина", name: "radio", id: "radio-1"})
+          +radioButton({title: "Женщина", name: "radio", id: "radio-2"})
+        h3.head-margin-top.head-margin Toggle
+        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-1"})
+        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2", checked: "checked"})
+        h3.head-margin-top.head-margin Like button
+        .input-row.toggle-wrapper
+          +likeButton({name: "like", id: "like-1", count: "2"})
+          +likeButton({name: "like", id: "like-2", count: "12"})
+        h3.head-margin-top.head-margin Rate button
+        .input-row
+          .rate-wrapper
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked 
+            span.rate-button.
+          .rate-wrapper
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked 
+            span.rate-button.rate-button__checked
     .column-320
       h3.head-margin Range slider
       .input-row 
@@ -75,3 +76,18 @@ block content
         .pagination-page
       .pagination-wrapper.pagination-wrapper-text
         p 1 – 12 из 100+ вариантов аренды
+  .form-elements-wrapper
+    .column-320
+      .column-260
+        +dropDownGuests({title: "dropdown", test: "DEFAULT"})
+        +dropDownGuests({title: "dropdown", test: "DEFAULT"})        
+        +dropDownRooms({title: "dropdown", test: "DEFAULT"})
+        +dropDownRooms({title: "dropdown", test: "EXPANDED", open: "menu-open"})
+
+        +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
+        +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
+        +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
+    .column-320
+      +dropDownGuests({title: "dropdown", test: "DEFAULT"})
+    .column-320
+      +dropDownGuests({title: "dropdown", test: "DEFAULT"})
