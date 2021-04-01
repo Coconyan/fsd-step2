@@ -82,8 +82,16 @@ block content
         +dropDownGuests({title: "dropdown", test: "DEFAULT"})
         +dropDownGuests({title: "dropdown", test: "DEFAULT"})        
         +dropDownRooms({title: "dropdown", test: "DEFAULT"})
-        +dropDownRooms({title: "dropdown", test: "EXPANDED", open: "menu-open"})
-
+        +dropDownRooms({title: "dropdown", test: "EXPANDED", open: "menu-open"})        
+        input(type="checkbox", name="checkbox-list" class="input-checkbox-list", id="checkbox-list")
+        label(for="checkbox-list", class="checkbox-list arrow-down") expandable checkbox list
+          +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
+          +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
+          +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
+        .checkbox-list expandable checkbox list
+          +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
+          +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
+          +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
         +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
         +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
         +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})

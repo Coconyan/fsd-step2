@@ -517,3 +517,38 @@ input:checked + .slider-like:before {
   height: 40px;
   background: url(../img/arrows/arrow_forward-white.svg) center no-repeat;
 }
+
+.input-checkbox-list {
+  display: none;  
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.checkbox-list {
+  width: 100%;
+  position: relative;
+}
+
+.checkbox-list > * {
+  display: none;
+}
+
+.input-checkbox-list:checked + label::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="rgba(31, 32, 65, 0.5)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: content-box;
+  display: inline-block;
+  position: absolute;
+  top: -12px;
+  height: 24px;
+  width: 24px;
+  padding: 20px 20px 0 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.input-checkbox-list:checked + label > * {
+  display: flex;
+}
