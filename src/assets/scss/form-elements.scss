@@ -457,8 +457,8 @@ input:checked + .slider-like:before {
   padding: 2px; 
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
   -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out; 
   mask-composite: exclude; 
 }
@@ -527,10 +527,33 @@ input:checked + .slider-like:before {
 .checkbox-list {
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;  
+  flex-wrap: wrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;  
 }
 
 .checkbox-list > * {
   display: none;
+  font-weight: normal;
+  color: rgba(31,32,65,.5);
+  font-size: 14px;
+  text-transform: none;
+  line-height: 24px;
+}
+
+.input-checkbox-list + label {
+  margin-bottom: 15px;
+}
+
+.checkbox-list .input-row:first-child {
+  margin-top: 15px;
 }
 
 .input-checkbox-list:checked + label::after {
@@ -541,7 +564,7 @@ input:checked + .slider-like:before {
   box-sizing: content-box;
   display: inline-block;
   position: absolute;
-  top: -12px;
+  top: -14px;
   height: 24px;
   width: 24px;
   padding: 20px 20px 0 0;

@@ -114,9 +114,10 @@ mixin checkboxButton(options)
     var checkboxClass = 'class'
     var checkboxTitle = 'title'
     var checkboxId = 'id'
+    var checkboxChecked = 'checked'
   .input-row
     .input-320-wrapper      
-      input(type='checkbox', name= options.name, id= options.id, class='checkbox-default')
+      input(type='checkbox', name= options.name, id= options.id, class='checkbox-default', checked= options.checked)
       label(for= options.id)= options.title
 
 
