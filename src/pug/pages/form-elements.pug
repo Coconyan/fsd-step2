@@ -23,19 +23,19 @@ block content
       .column-260
         h3.head-margin Checkbox buttons
         +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
-        +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
-        +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
+        +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2", checked: "true"})
+        +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3", checked: "true"})
         h3.head-margin-top.head-margin Radio buttons
         .input-row
-          +radioButton({title: "Мужчина", name: "radio", id: "radio-1"})
+          +radioButton({title: "Мужчина", name: "radio", id: "radio-1", checked: "true"})
           +radioButton({title: "Женщина", name: "radio", id: "radio-2"})
         h3.head-margin-top.head-margin Toggle
-        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-1"})
-        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2", checked: "checked"})
+        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-1", checked: "true"})
+        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2"})
         h3.head-margin-top.head-margin Like button
         .input-row.toggle-wrapper
           +likeButton({name: "like", id: "like-1", count: "2"})
-          +likeButton({name: "like", id: "like-2", count: "12"})
+          +likeButton({name: "like", id: "like-2", count: "12", checked: "true"})
         h3.head-margin-top.head-margin Rate button
         .input-row
           .rate-wrapper
@@ -93,6 +93,9 @@ block content
           +checkboxButton({title: "Шампунь", name: "checkbox", id: "checkbox-6"})
     .column-320
       +dropDownRooms({title: "dropdown", open: "menu-open", last: "true"})
+      h3.head-margin Rich checkbox buttons
+      +richCheckboxButton({title: "Ширина коридоров в номере не менее 91 см.", subtitle: "Широкий коридор", name: "rich-checkbox", id: "rich-checkbox-1"})
+      +richCheckboxButton({title: "На 1 этаже вас встретит специалист  и проводит до номера.", subtitle: "Помощник для инвалидов", name: "rich-checkbox", id: "rich-checkbox-2"})
     .column-320
       +dropDownGuests({title: "dropdown", test: "DEFAULT"})
   .form-elements-wrapper

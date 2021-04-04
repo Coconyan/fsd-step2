@@ -126,14 +126,31 @@ mixin checkboxButton(options)
       label(for= options.id)= options.title
 
 
+mixin richCheckboxButton(options)
+  -
+    var richCheckboxName = 'name'
+    var richCheckboxClass = 'class'
+    var richCheckboxTitle = 'title'
+    var richCheckboxTitle = 'subtitle'
+    var richCheckboxId = 'id'
+    var richCheckboxChecked = 'checked'
+  .input-row
+    .input-320-wrapper      
+      input(type='checkbox', name= options.name, id= options.id, class='checkbox-default checkbox-default-266', checked= options.checked)
+      label(for= options.id)
+        span(class='rich-checkbox-subtitle')= options.subtitle
+        span(class='rich-checkbox-text')= options.title
+
+
 mixin radioButton(options)
   -
     var radioName = 'name'
     var radioClass = 'class'
     var radioTitle = 'title'
-    var radioId = 'id' 
+    var radioId = 'id'    
+    var radioChecked = 'checked' 
   div.radio-wrapper
-    input(type='radio', name= options.name, id= options.id, class='radio-default')
+    input(type='radio', name= options.name, id= options.id, class='radio-default', checked= options.checked)
     label(for= options.id)= options.title
 
 
@@ -146,7 +163,7 @@ mixin toggleSwitch(options)
     var toggleChecked = 'checked' 
   .input-row.toggle-wrapper
     label(for= options.id, class='switch')      
-      input(type='checkbox', name= options.name, id= options.id, class=options.class)
+      input(type='checkbox', name= options.name, id= options.id, class=options.class, checked= options.checked)
       span(class='slider round')
     span(class='toggle-text')= options.title
 
@@ -160,7 +177,7 @@ mixin likeButton(options)
     var likeChecked = 'checked'
     var likeCount = 'count'   
   label(for= options.id, class='switch-like')      
-    input(type='checkbox', name= options.name, id= options.id, class=options.class)
+    input(type='checkbox', name= options.name, id= options.id, class=options.class, checked= options.checked)
     span(class='slider-like round')
       span(class='like-count')= options.count
 
