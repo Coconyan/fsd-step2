@@ -44,6 +44,7 @@ mixin dropDownRooms(options)
     var dropDownFieldTitle = 'title'
     var test = 'test'
     var open = 'open'
+    var last = 'false'
   .input-row
     .input-320-wrapper
       h3
@@ -62,6 +63,10 @@ mixin dropDownRooms(options)
           .iqdropdown-menu-option(data-id='item33')
             div
               p.iqdropdown-item Ванные комнаты
+          if options.last == "true"
+            .iqdropdown-menu-last-row
+              p.iqdropdown-menu-clear-btn Очистить
+              p.iqdropdown-menu-submit-btn Применить
 
 
 mixin dateDropdown150(options)
