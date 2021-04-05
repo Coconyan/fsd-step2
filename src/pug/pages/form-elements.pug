@@ -105,17 +105,18 @@ block content
         li.bullet-list-item Время прибытия — после 13:00, а выезд до 12:00
   .form-elements-wrapper
     .column-320
-      .column-260
-        +dropDownGuests({title: "dropdown", test: "DEFAULT"})
-        +dropDownGuests({title: "dropdown", test: "DEFAULT"})        
-        +dropDownRooms({title: "dropdown", test: "DEFAULT"})
-        +dropDownRooms({title: "dropdown", test: "EXPANDED", open: "menu-open"})        
-        input(type="checkbox", name="checkbox-list" class="input-checkbox-list", id="checkbox-list")        
-        label(for="checkbox-list", class="checkbox-list arrow-down") expandable checkbox list          
-          +checkboxButton({title: "Можно курить", name: "checkbox", id: "checkbox-1"})
-          +checkboxButton({title: "Можно с питомцами", name: "checkbox", id: "checkbox-2"})
-          +checkboxButton({title: "Можно пригласить гостей (до 10 человек)", name: "checkbox", id: "checkbox-3"})
-    .column-320
-      +dropDownGuests({title: "dropdown", test: "DEFAULT"})
-    .column-320
+      .advantages-wrapper
+        .advantages-left-column
+          span.advantages-icon.smile-icon
+        .advantages-right-column
+          span.advantages-subtitle Комфорт
+          span.advantages-text Шумопоглощающие стены
+      .advantages-wrapper
+        .advantages-left-column
+          span.advantages-icon.city-icon
+        .advantages-right-column
+          span.advantages-subtitle Удобство
+          span.advantages-text Окно в каждой из спален
+
+    .column-720
       +dropDownGuests({title: "dropdown", test: "DEFAULT"})
