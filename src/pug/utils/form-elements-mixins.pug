@@ -17,26 +17,30 @@ mixin dropDownGuests(options)
   -
     var dropDownFieldTitle = 'title'
     var test = 'test'
+    var open = 'open'
+    var item1 = 'item1'
+    var item2 = 'item2'
+    var visible = 'visible'
   .input-row
     .input-320-wrapper
       h3
         label(for= options.name)= options.title
         if test
           span(class='ui-kit-right-text')= options.test  
-      .iqdropdown
+      .iqdropdown(class= options.open)
         p.iqdropdown-selection(data-seletion-text='Сколько гостей')
         .iqdropdown-menu
-          .iqdropdown-menu-option(data-id='item1')
+          .iqdropdown-menu-option(data-id='item1', data-defaultcount= options.item1)
             div
               p.iqdropdown-item Взрослые
-          .iqdropdown-menu-option(data-id='item2')
+          .iqdropdown-menu-option(data-id='item2', data-defaultcount= options.item2)
             div
               p.iqdropdown-item Дети
           .iqdropdown-menu-option(data-id='item3')
             div
               p.iqdropdown-item Младенцы
           .iqdropdown-menu-last-row
-            p.iqdropdown-menu-clear-btn Очистить
+            p.iqdropdown-menu-clear-btn(class= options.visible) Очистить
             p.iqdropdown-menu-submit-btn Применить
 
 mixin dropDownRooms(options)

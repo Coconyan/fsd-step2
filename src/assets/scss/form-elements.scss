@@ -594,3 +594,21 @@ input:checked + .slider-like:before {
   flex-wrap: wrap;  
   margin-bottom: 10px;
 }
+
+// Bullet list
+
+.bullet-list-item {
+  position: relative;
+  margin: 0 0 10px 20px;
+}
+
+.bullet-list-item::before {  
+  content: "";
+  position: absolute;  
+  top: 7px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+}
