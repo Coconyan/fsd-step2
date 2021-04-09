@@ -1,0 +1,23 @@
+extends ../layouts/main-gray-bgc
+block variables
+  - var pageTitle = 'Cards'
+
+include ../utils/form-elements-mixins
+
+block content
+  div.logo-wrapper 
+    span.logo
+  .form-elements-wrapper
+    .column-380
+      .cards-380-wrapper
+        h1.cards-h1 Найдём номера под ваши пожелания
+        .input-row.input-row-between
+          +dateDropdown150({title: "date dropdown", name: "date-dropdown-150", placeholder: "ДД.ММ.ГГГГ"})
+          +dateDropdown150({title: "date dropdown", name: "date-dropdown-150", placeholder: "ДД.ММ.ГГГГ"})
+        +dropDownGuests({title: "Гости", test: "DEFAULT"})
+        .input-row
+          button.button-gradient.button-gradient-arrow Перейти к оплате
+    .column-380
+      .cards-380-wrapper
+    .column-320
+      .cards-320-wrapper

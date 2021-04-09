@@ -6,6 +6,7 @@ import './assets/scss/main.scss';
 import './assets/scss/colors.scss';
 import './assets/scss/fonts.scss';
 import './assets/scss/form-elements.scss';
+import './assets/scss/cards.scss';
 import './assets/scss/item-quantity-dropdown.scss';
 import './assets/js/item-quantity-dropdown';
 import './assets/js/datepicker';

@@ -416,7 +416,10 @@ input:checked + .slider-like:before {
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
+
+.button-gradient-margin {
   margin: 0 20px 30px 0;
 }
 
@@ -428,7 +431,7 @@ input:checked + .slider-like:before {
   position: absolute;
   content: "";
   top: 0px;
-  right: 16px;
+  right: 0px;
   width: 44px;
   height: 44px;
   background: url(../img/arrows/arrow_forward-white.svg) no-repeat center;
