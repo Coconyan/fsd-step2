@@ -12,12 +12,47 @@ block content
       .cards-380-wrapper
         h1.cards-h1 Найдём номера под ваши пожелания
         .input-row.input-row-between
-          +dateDropdown150({title: "date dropdown", name: "date-dropdown-150", placeholder: "ДД.ММ.ГГГГ"})
-          +dateDropdown150({title: "date dropdown", name: "date-dropdown-150", placeholder: "ДД.ММ.ГГГГ"})
-        +dropDownGuests({title: "Гости", test: "DEFAULT"})
+          +dateDropdown150({title: "Прибытие", name: "check-in", placeholder: "ДД.ММ.ГГГГ"})
+          +dateDropdown150({title: "Выезд", name: "check-out", placeholder: "ДД.ММ.ГГГГ"})
+        +dropDownGuests({title: "Гости"})
         .input-row
+          button.button-gradient.button-gradient-arrow Подобрать номер
+      .cards-380-wrapper
+        h1.cards-h1 Регистрация аккаунта
+        +textField({name: "text-field-default", placeholder: "Имя"})
+        +textField({name: "text-field-default", placeholder: "Фамилия"})
+        .input-row.cards-h1
+          +radioButton({title: "Мужчина", name: "radio", id: "radio-1", checked: "true"})
+          +radioButton({title: "Женщина", name: "radio", id: "radio-2"})
+        +textField({title: "Дата рождения", name: "birth-date", placeholder: "ДД.ММ.ГГГГ", class: "cards-h1"})
+        +textField({title: "Данные для входа в сервис", name: "email", placeholder: "Email"})
+        +textField({name: "password", placeholder: "Пароль"})
+        +toggleSwitch({title: "Получать спецпредложения", name: "toggle", id: "toggle-2", class: "cards-h1"})
+        .input-row.cards-h1
           button.button-gradient.button-gradient-arrow Перейти к оплате
+        .input-row.input-row-between
+          p.register-bottom-text Уже есть аккаунт на Toxin
+          button.button-gradient.button-gradient-no-fill Войти
     .column-380
       .cards-380-wrapper
+        h1.cards-h1 №888
+          span.purple-text Люкс
+          span.ui-kit-right-text 9 990₽ &nbsp;
+              span.ui-kit-right-text-lowercase в сутки
+        .input-row.input-row-between
+          +dateDropdown150({title: "Прибытие", name: "check-in", placeholder: "ДД.ММ.ГГГГ"})
+          +dateDropdown150({title: "Выезд", name: "check-out", placeholder: "ДД.ММ.ГГГГ"})
+        +dropDownGuests({title: "Гости", item1: "2", item2: "1", visible: "visible"})
+        .input-row
+            button.button-gradient.button-gradient-arrow Забронировать
+      .cards-380-wrapper
+        h1.cards-h1 Войти
+        +textField({name: "email", placeholder: "Email"})
+        +textField({name: "password", placeholder: "Пароль", class: "cards-h1"})
+        .input-row.cards-h1
+          button.button-gradient.button-gradient-arrow Войти
+        .input-row.input-row-between
+          p.register-bottom-text Нет аккаунта на Toxin?
+          button.button-gradient.button-gradient-no-fill Создать
     .column-320
       .cards-320-wrapper

@@ -11,7 +11,7 @@ mixin textField(options)
         label(for= options.name)= options.title
         if test
           span(class='ui-kit-right-text')= options.test
-      input(type='text', name= options.name, placeholder= options.placeholder class='text-field', class= options.class)
+      input(type='text', name= options.name, placeholder= options.placeholder, class='text-field', class= options.class)
 
 mixin dropDownGuests(options)
   -
@@ -165,9 +165,9 @@ mixin toggleSwitch(options)
     var toggleTitle = 'title'
     var toggleId = 'id'
     var toggleChecked = 'checked' 
-  .input-row.toggle-wrapper
+  .input-row.toggle-wrapper(class= options.class)
     label(for= options.id, class='switch')      
-      input(type='checkbox', name= options.name, id= options.id, class=options.class, checked= options.checked)
+      input(type='checkbox', name= options.name, id= options.id, class= options.class, checked= options.checked)
       span(class='slider round')
     span(class='toggle-text')= options.title
 

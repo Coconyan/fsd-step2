@@ -21,6 +21,28 @@ $purple: #BC9CFF;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
+  margin-bottom: 40px;
+}
+
+.cards-380-wrapper input {
+  margin-bottom: 10px;
+}
+
+.cards-380-wrapper .cards-h1 {
+  margin-bottom: 20px;
+}
+
+.cards-380-wrapper .ui-kit-right-text {
+  bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31,32,65,.5);
+}
+
+.ui-kit-right-text-lowercase {
+  text-transform: lowercase;
+  font-weight: normal;
+  font-size: 12px;
 }
 
 .cards-320-wrapper {
@@ -36,4 +58,19 @@ $purple: #BC9CFF;
 
 .cards-h1 {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.purple-text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+}
+
+.register-bottom-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
 }
