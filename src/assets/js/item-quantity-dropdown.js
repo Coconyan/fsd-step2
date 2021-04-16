@@ -15,16 +15,20 @@
     beforeDecrement: () => true,
     beforeIncrement: () => true,
     setSelectionText (itemCount, totalItems) {
-      if (totalItems == 0) {
-        return 'Сколько гостей';
-      }
-      else if (totalItems == 1) {
-        return `${totalItems} гость`;
-      } 
-      else if (totalItems < 5) {
-        return `${totalItems} гостя`;
-      }
-      else return `${totalItems} гостей`;
+      console.log(itemCount);
+      console.log(totalItems);
+      console.log(this);
+      return `Взрослые ${itemCount['item1']}, Дети ${itemCount['item2']}`;
+      // if (totalItems === 0) {
+      //   return 'Сколько гостей';
+      // }
+      // else if (totalItems === 1) {        
+      //   return `${totalItems} гость`;
+      // } 
+      // else if (totalItems < 5) {
+      //   return `${totalItems} гостя`;
+      // }
+      // else return `${totalItems} гостей`;
     },
   };
 
