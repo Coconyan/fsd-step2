@@ -135,8 +135,8 @@ $purple: #BC9CFF;
 
 span.dashed-bottom {
   width: 100%;
-  border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
-  margin-bottom: 4px;
+  border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+  margin: 0 5px 4px 5px;
 }
 
 .input-row-flex-end {
