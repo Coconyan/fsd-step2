@@ -14,21 +14,20 @@
     onChange: () => {},
     beforeDecrement: () => true,
     beforeIncrement: () => true,
-    setSelectionText (itemCount, totalItems) {
-      console.log(itemCount);
-      console.log(totalItems);
-      console.log(this);
-      return `Взрослые ${itemCount['item1']}, Дети ${itemCount['item2']}`;
-      // if (totalItems === 0) {
-      //   return 'Сколько гостей';
-      // }
-      // else if (totalItems === 1) {        
-      //   return `${totalItems} гость`;
-      // } 
-      // else if (totalItems < 5) {
-      //   return `${totalItems} гостя`;
-      // }
-      // else return `${totalItems} гостей`;
+    setSelectionText (itemCount, totalItems) {      
+      if (itemCount['item11'] >= 0 || itemCount['item22'] >= 0 || itemCount['item33'] >= 0) {
+        return `${itemCount['item11']} cпальни, ${itemCount['item22']} кровати...`;
+      } 
+      else if ((itemCount['item1'] >= 0 || itemCount['item2'] >= 0 || itemCount['item3'] >= 0) && totalItems === 0) {
+        return 'Сколько гостей';
+      }
+      else if ((itemCount['item1'] >= 0 || itemCount['item2'] >= 0 || itemCount['item3'] >= 0) && totalItems === 1) {
+        return `${totalItems} гость`;
+      }
+      else if ((itemCount['item1'] >= 0 || itemCount['item2'] >= 0 || itemCount['item3'] >= 0) && totalItems < 5) {
+        return `${totalItems} гостя`;
+      }
+      else return `${totalItems} гостей`;
     },
   };
 
